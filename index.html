@@ -1,0 +1,109 @@
+<style>
+    *{margin:0}
+    h2{font-size:1em}
+    p {font-size:0.8em}
+    .header {
+      background: LightSkyBlue;
+      grid-area: header;
+      text-align:center;
+    }
+    
+    .hero {
+      background: LightSalmon;
+      grid-area: hero;
+    }
+    
+    .ad {
+      background: PaleTurquoise;
+      grid-area: ad;
+    }
+    
+    .body1 {
+      background: lightpink;
+      grid-area: body1;
+       min-height: 200px
+    }
+     .body2 {
+      background: yellow;
+      grid-area: body2;
+       min-height: 300px
+    }
+  
+  
+    .sidebar {
+      background: silver;
+      grid-area: sidebar;
+    }
+     .footer{
+      background: red;
+      grid-area: footer;
+    }
+    
+    .container {
+      font-size: 1.5em;
+      min-height: 400px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 100px 50px 50px 140px fr;
+      grid-gap: 10px;
+      grid-template-areas:
+        "header"
+        "hero"
+        "body1"
+        "ad"
+        "body2"
+        "footer";
+    }
+    .sidebar{
+     display: none;
+    }
+    
+    @media (min-width: 576px){
+      .sidebar{
+     display: block;
+    }
+  .ad {margin-left:-10px}
+  
+      .container
+  
+      {
+        grid-template-columns: 100px 300px 3fr 1fr;
+        grid-template-rows:  50px 100px 50px 50px 140px fr ;
+  
+        grid-template-areas:
+          "header header header header"
+          "hero hero hero hero"
+          "body1 body1 ad ad"
+          "body2 body2 body2 body2"
+          "sidebar sidebar sidebar sidebar"
+          "footer footer footer  footer";
+      }
+    }
+    
+    @media (min-width: 992px){
+      .ad {margin-left:0px}
+      .container{
+      grid-template-columns: 250px 300px 3fr 1fr;
+      grid-template-rows:  50px 300px 50px  fr ;
+        grid-template-areas:
+          "header header header header"
+          "hero hero hero ad"
+          "body1 body2 body2 sidebar"
+          "footer footer footer footer"
+          ;
+      
+      }
+    }
+  </style>
+    
+  <div class="container">
+    <div class="header"><header> Header</header></div>
+    <div class="hero">hero</div>
+    <div class="ad"><img src="http://i59.servimg.com/u/f59/14/20/88/19/freead10.jpg" width=100% ><img></div>
+    <div class="body1"><div><h2>Article feature</h2> <p>feature feature feature feature feature feature feature feature feature feature feature feature feature feature  </p></div></div>
+    <div class="body2"><h2>Article listing</h2><p class="mainText">listing listing listing  listing listing  listing  listing listing  listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing sting  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing listing  listing listing  listing  listing listing v   </p></div>
+    <div class="sidebar">sidebar</div>
+    <div class="footer">footer</div>
+  </div>
