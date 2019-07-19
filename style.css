@@ -42,15 +42,19 @@ ul {
     margin:0;
    font-size: 16px;
    border: 1px solid black;
-   border-radius: 5px;
    background-color:hsl(203, 92%, 60%);
    color: black;
    padding: 4px 4px;
-   font-size: 16px;
    cursor: pointer;
-   text-decoration: none
+   text-decoration: none;
 }
-.scale:hover {transform: scale(1.1);}
+.scale{
+    display:inline-block;
+    transition: all 300ms;
+}
+.scale:hover {transform: scale(1.1);
+
+}
 
 
 
@@ -66,7 +70,8 @@ ul {
 
 .hero {
 
-background-image: url("https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_960_720.jpg");
+background-image: url("https://cdn.pixabay.com/photo/2014/12/09/19/17/fir-562247_960_720.jpg");
+background-position: center;
 background-color: #cccccc;
 height: 220px;
 background-size: cover;
@@ -82,8 +87,11 @@ grid-template-areas:
 }
 .callToAction{
 grid-area:callToAction;
-text-align: center;
-color: chartreuse
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 50px;
+color: chartreuse;
 }
 
 .feature{
@@ -102,7 +110,8 @@ grid-area: ad;
 .body1 {
 background: lightpink;
 grid-area: body1;
-min-height: 200px
+min-height: 200px;
+display:flex;
 }
 
  .body2 {
@@ -113,10 +122,23 @@ min-height: 300px
 
 
 .sidebar {
-  background: silver;
+  background: rgb(177, 255, 87);
   grid-area: sidebar;
   display: flex;
   flex-wrap: wrap; 
+}
+.imgContainer {
+        position: relative;
+      }
+
+.imgText {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    /* background-color: black; */
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
 }
  .footer{
   background: red;
@@ -155,9 +177,12 @@ grid-template-columns: 1fr 1fr;
 
 
 @media (min-width: 576px){
-  .sidebar{ display: block;
+  .sidebar{ display: flex;
 }
-.feature{ display: block;
+.feature{ 
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .ad {margin-left:-10px}
