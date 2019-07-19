@@ -18,6 +18,24 @@
           background: LightSkyBlue;
           grid-area: header;
           text-align:center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          /* grid-template-rows: 50px 300px 50px 200px 1fr 26px; */
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 10px;
+          grid-template-areas: 
+            "brand brand"
+            "GlobalNav tools";
+        }
+
+        .brand{
+            grid-area: brand;
+        }
+        .GlobalNav{
+            grid-area: GlobalNav;
+        }
+        .tools{
+            grid-area: tools;
         }
         
         .hero {
@@ -25,7 +43,7 @@
           background-image: url("https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_960_720.jpg");
           /* background-position: 50% 50%;  */
           background-color: #cccccc; /* Used if the image is unavailable */
-        height: 300px;
+        height: 220px;
           background-size: cover;
       
           grid-area: hero;
@@ -64,7 +82,8 @@
           background: LightGray;
           display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 50px 150px 50px 50px 1fr 26px;
+          /* grid-template-rows: 50px 300px 50px 200px 1fr 26px; */
+          grid-template-rows: 100px 220px auto 1fr 1fr 26px;
           grid-gap: 10px;
           grid-template-areas:
             "header"
@@ -77,34 +96,63 @@
         .sidebar{
          display: none;
         }
+        .header-grid{
+        grid-column: col 3 / span 2;
+        grid-row: row 2;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+
+        }
+
         
         @media (min-width: 576px){
           .sidebar{
          display: block;
         }
-      .ad {margin-left:-10px}
-      
-          .container
-      
-          {
-            grid-template-columns: 100px 300px 3fr 1fr;
-            grid-template-rows:  50px 0.5fr 1fr 1fr 1fr 26px ;
-      
-            grid-template-areas:
-              "header header header header"
-              "hero hero hero hero"
-              "body1 body1 ad ad"
-              "body2 body2 body2 body2"
-              "sidebar sidebar sidebar sidebar"
-              "footer footer footer  footer";
-          }
-        }
+
         
+        .ad {margin-left:-10px}
+      
+      .container{
+        grid-template-columns:  1fr 180px;
+        grid-template-rows:  50px 0.5fr 1fr 1fr 1fr 26px ;
+  
+        grid-template-areas:
+          " header header"
+          " hero hero"
+          " body1 ad"
+          " body2 body2"
+          " sidebar sidebar"
+          " footer  footer";
+      }
+      .header {
+          background: LightSkyBlue;
+          grid-area: header;
+          text-align:center;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          /* grid-template-rows: 50px 300px 50px 200px 1fr 26px; */
+          grid-template-rows: 1fr;
+          grid-gap: 10px;
+          grid-template-areas: 
+            "brand GlobalNav tools";
+        }
+
+    }
+
+
+
+
+
         @media (min-width: 992px){
           .ad {margin-left:0px}
+          body{}
           .container{
-          grid-template-columns: 250px 300px 3fr 1fr;
-          grid-template-rows:  50px 1fr auto  26px ;
+            min-height: 100vh;
+
+          grid-template-columns: 250px 300px 1fr 180px;
+          grid-template-rows:  50px 220px 1fr  26px ;
             grid-template-areas:
               "header header header header"
               "hero hero hero ad"
@@ -117,7 +165,7 @@
       </style>
         
       <div class="container">
-        <div class="header"><header> Header</header></div>
+        <div class="header"> <div class="brand">brand </div><div class="GlobalNav">nav</div><div class="Tools">tools</div></div>
         <div class="hero"><p class="hero" style="    font-size:2em;
           text-align:center; color:white"
           > Hero</p></div>
