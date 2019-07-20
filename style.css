@@ -26,7 +26,7 @@ padding:10px;}
   display: grid;
   grid-template-columns: minmax( 270px, 1fr) auto;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 0px;
   grid-template-areas: 
     "brand brand"
     "GlobalNav tools";
@@ -149,6 +149,8 @@ background-color: olivedrab;
 
 .sidebarLink{
     background-color: olivedrab;
+    border-top: white solid 2px;
+    border-bottom: white solid 2px;
     width: 100%;
 
 }
@@ -194,7 +196,7 @@ cursor: pointer;}
 grid-column: col 3 / span 2;
 grid-row: row 2;
 display: grid;
-grid-gap: 5px;
+grid-gap: 0px;
 grid-template-columns: 1fr 1fr;
 
 }
@@ -238,7 +240,7 @@ grid-template-areas:
   display: grid;
   grid-template-columns: 1fr minmax( 270px, 1fr) 180px;
   grid-template-rows: 1fr;
-  grid-gap: 5px;
+  grid-gap: 0px;
   grid-template-areas: 
     "brand GlobalNav tools";
     }
