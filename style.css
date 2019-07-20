@@ -147,6 +147,7 @@ background-color: olivedrab;
 
 .sidebarLink{
     background-color: olivedrab;
+    width: 100%;
 
 }
 .sidebarLink:hover {background-color: rgb(157, 175, 120);
@@ -175,7 +176,7 @@ cursor: pointer;}
   background: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 220px 1fr minmax(1fr, 600px) 1fr 26px;
+  grid-template-rows: 100px 220px 1fr minmax(300px, 600px) 1fr 26px;
   grid-gap: 5px;
   grid-template-areas:
     "header"
