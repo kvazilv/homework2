@@ -179,7 +179,10 @@ cursor: pointer;}
   background: rgb(16, 122, 6);
   grid-area: footer;
   text-align: center;
-}
+ }
+  .email { color: white;
+    text-decoration: none;
+  }
 
 .container {
   font-size: 1.5em;
@@ -188,7 +191,7 @@ cursor: pointer;}
   background: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 220px 1fr auto auto 26px;
+  grid-template-rows: 100px 220px 1fr auto auto 60px;
   grid-gap: 5px;
   grid-template-areas:
     "header"
@@ -230,7 +233,7 @@ justify-content: center;
 .container{
 background: rgb(255, 255, 255);
 grid-template-columns:  1fr 180px;
-grid-template-rows:  50px minmax(300px, auto) 2fr auto auto 26px ;
+grid-template-rows:  50px minmax(300px, auto) 2fr auto auto 60px ;
 
 grid-template-areas:
   " header header"
@@ -271,7 +274,7 @@ grid-template-areas:
   .container{
     min-height: 100vh;
     grid-template-columns: 250px 300px 1fr 180px;
-    grid-template-rows:  50px auto 1fr  26px ;
+    grid-template-rows:  50px auto 1fr  60px ;
     grid-template-areas:
       "header header header header"
       "hero hero hero ad"
