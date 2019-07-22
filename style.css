@@ -43,6 +43,7 @@ padding:10px;}
     background: rgb(82, 121, 65);
 
 
+
 }
 
 ul {
@@ -51,15 +52,16 @@ ul {
     padding: 0;
   }
 .navbutton{
-    display: inline;
+    display: inline-block;
     margin:0;
    font-size: 16px;
-   /* border: 1px solid rgb(73, 172, 73); */
+
    background-color:hsl(88, 59%, 45%);
    color: rgb(255, 255, 255);
    padding: 4px 4px;
    cursor: pointer;
    text-decoration: none;
+   border-width: 0px;
 }
 .scale{
     display:inline-block;
@@ -176,7 +178,7 @@ cursor: pointer;}
 }
  .footer{
      color: white;
-  background: rgb(16, 122, 6);
+  background: rgb(42, 97, 31);
   grid-area: footer;
   text-align: center;
  }
