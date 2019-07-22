@@ -1,9 +1,11 @@
 
 body {background-color: white}
 *{margin:0}
-h2{font-size:1em;
+h2{font-size:1.3em;
 color: white;
 padding:10px;
+font-family: 'Fira Sans', sans-serif;
+font-weight:500;
 }
 h3{font-size:1em;
     color: white;
@@ -13,8 +15,7 @@ h3{font-size:1em;
 p {font-size:0.8em;
 color: white;
 padding:10px;}
-* {font-family:'Roboto';
-    font-weight:300;}
+* {font-family: 'Noto Serif', serif;font-weight:300;}
 
     .body1>* {text-align: justify;}
     .body2>* {text-align: justify;}
@@ -38,16 +39,43 @@ padding:10px;}
 }
 
 
+.animTxt {
+    text-shadow: 3px 3px 3px   #000000;
+    animation-duration: 3s;
+  animation-name: opacity ;
+  animation-iteration-count:infinite;
+  cursor: pointer;
+}
+
+.shadowTxt {
+    text-shadow: 3px 3px 3px   #000000;
+}
+
+@keyframes opacity {
+from {
+    opacity: 0;
+  }
+  50% {opacity: 1;}
+to 
+{
+    opacity: 0;
+  }
+  
+}
+
+
+
+
 .GlobalNav{
     grid-area: GlobalNav;
     background: rgb(82, 121, 65);
     display:flex;
     align-items: center;
     justify-content:center;
-
-
-
 }
+
+
+
 
 ul {
     list-style-type: none;
