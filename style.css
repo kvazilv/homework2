@@ -41,6 +41,9 @@ padding:10px;}
 .GlobalNav{
     grid-area: GlobalNav;
     background: rgb(82, 121, 65);
+    display:flex;
+    align-items: center;
+    justify-content:center;
 
 
 
@@ -55,8 +58,6 @@ ul {
     display: inline-block;
     margin:0;
    font-size: 16px;
-
-   background-color:hsl(88, 59%, 45%);
    color: rgb(255, 255, 255);
    padding: 4px 4px;
    cursor: pointer;
@@ -64,12 +65,13 @@ ul {
    border-width: 0px;
 }
 .scale{
-    display:inline-block;
+    display:flex;
     transition: all 300ms;
+    background: rgb(82, 121, 65);
 }
 .scale:hover {transform: scale(1.2);
-    background-color: darkolivegreen;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 0px -1px 28px 0px rgba(0,0,0,0.75);
+    background: rgb(171, 219, 139);
     ;
 
 }
@@ -178,7 +180,7 @@ cursor: pointer;}
 }
  .footer{
      color: white;
-  background: rgb(42, 97, 31);
+     background: rgb(82, 121, 65);
   grid-area: footer;
   text-align: center;
  }
