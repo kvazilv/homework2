@@ -30,7 +30,7 @@ padding:10px;}
   grid-gap: 0px;
   grid-template-areas: 
     "brand brand"
-    "GlobalNav tools";s
+    "GlobalNav tools";
 }
 
 .brand{
