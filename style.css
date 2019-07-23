@@ -25,12 +25,12 @@ padding:10px;}
   grid-area: header;
   text-align:center;
   display: grid;
-  grid-template-columns: minmax( 270px, 1fr) auto;
+  grid-template-columns: minmax( 230px, 1fr) auto;
   grid-template-rows: 1fr 1fr;
   grid-gap: 0px;
   grid-template-areas: 
     "brand brand"
-    "GlobalNav tools";
+    "GlobalNav tools";s
 }
 
 .brand{
