@@ -218,11 +218,11 @@ cursor: pointer;}
 
 .container {
   font-size: 1.5em;
-  min-height: 400px;
+  /* min-height: 400px; */
   width: 100%;
   background: rgb(255, 255, 255);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 100px 220px 1fr auto auto 60px;
   grid-gap: 5px;
   grid-template-areas:
