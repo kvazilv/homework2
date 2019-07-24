@@ -197,8 +197,8 @@ background-color: olivedrab;
 
 .sidebarLink{
     background-color: olivedrab;
-    border-top: white solid 2px;
-    border-bottom: white solid 2px;
+    border-top: rgb(85, 114, 28) solid 1px;
+    border-bottom: rgb(85, 114, 28) solid 1px;
     width: 100%;
 
 }
