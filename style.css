@@ -150,7 +150,9 @@ background: rgb(255, 255, 255);
 grid-area: ad;
 }
 
-.ad1{           
+.ad1{   
+  margin-top:-10px;
+  margin-bottom:-10px ;       
     object-fit: cover;
     width: 100%;
     max-height: 320px; 
@@ -260,7 +262,11 @@ align-items: center;
 justify-content: center;
 }
 
-/* .ad {margin-left:-10px} */
+.ad {margin-left:-10px}
+.ad1 {
+  margin-top:0px;
+  margin-bottom:0px ;    
+}
 .ad2{display:block;}
 .container{
   grid-gap: 5px;
