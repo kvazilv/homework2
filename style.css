@@ -260,7 +260,7 @@ justify-content: center;
 
 @media (min-width: 576px){
   .sidebar{ display: flex;
-    width:180px;
+    /* width:180px; */
   
 }
 .feature{ 
