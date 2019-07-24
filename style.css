@@ -260,9 +260,10 @@ align-items: center;
 justify-content: center;
 }
 
-.ad {margin-left:-10px}
+/* .ad {margin-left:-10px} */
 .ad2{display:block;}
 .container{
+  grid-gap: 5px;
 background: rgb(255, 255, 255);
 grid-template-columns:  1fr 180px;
 grid-template-rows:  50px minmax(300px, auto) 2fr auto auto 60px ;
